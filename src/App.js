@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import InvoiceGenerator from './Components/InvoiceGenerator';
 
 class App extends Component {
