@@ -6,6 +6,7 @@ import styles from './../App.css';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas'
 import ToggleDisplay from 'react-toggle-display';
+import TextareaAutosize from 'react-autosize-textarea';
 
 class Header extends React.Component {
     render() {
@@ -164,7 +165,7 @@ class InvoiceGenerator extends React.Component {
 
         this.setState({ratetax:rate})
 
-        this.state.tax = (this.state.count * rate)/100;
+        this.state.tax = (this.state.count * rate)%10;
                
         this.state.maintotal = this.state.count + this.state.tax;
     }
@@ -243,14 +244,16 @@ render() {
                              <hr />
                                 <div> 
                                 <ToggleDisplay show={this.state.show}>
-                                    <textarea cols="65" rows="6" id="txthide" className="myTxt1" >
+                                <TextareaAutosize  cols="65"  onResize={(e) => {}} className="myTxt1" >
+                                    {/* <textarea cols="65" rows="6" id="txthide" className="myTxt1" > */}
                                     Dear Ms. Jane Doe,
         
                                     Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact me with any questions.
         
                                     Many thanks,
                                     Your Name
-                                    </textarea>
+                                    {/* </textarea> */}
+                                    </TextareaAutosize>
                                     </ToggleDisplay>
                                 </div>
                              <br />
@@ -313,11 +316,13 @@ render() {
                                 </div>
                                 <br /><br /><br />
                                 <div>
-                                <textarea className="myTxt2" cols="70" rows="5" >
+                                <TextareaAutosize  className="myTxt2" cols="70"  onResize={(e) => {}}  >
+                                {/* <textarea className="myTxt2" cols="70" rows="5" > */}
                                         Many thanks for your custom! I look forward to doing business with you again in due course.
         
                                             Payment terms: to be received within 60 days.
-                               </textarea>
+                               {/* </textarea> */}
+                               </TextareaAutosize>
                                      </div>
                             </div>
                         </div>
