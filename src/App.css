@@ -138,12 +138,15 @@
   background: #f6f6f6;
    font-size: 9px;
    text-align:right; 
+   /* margin-right: 5px; */
 }
 .col2Input4 {
   border: 0px; 
   background: #f6f6f6;
    font-size: 12px;
    text-align:right; 
+   /* margin-right: 30px; */
+
 }
 
 

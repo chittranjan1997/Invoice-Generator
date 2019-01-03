@@ -229,8 +229,10 @@ render() {
                                             <input className="col1Input" type="text" placeholder="(123) 456 789"         />
                                             <input className="col1Input" type="text" placeholder="email@yourcompany.com" />
                                         </td>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                        
                                          <td>
                                         <input className="col2Input" type="text" placeholder="27-December-2018"    />
@@ -300,15 +302,15 @@ render() {
                                         <col width="120%" />
                                         <col width="30%" />
                                         <tbody>
-                                            <td style={{textAlign:"left"}}><input type="text" placeholder="Subtotal"            style={{ border: "0px",fontSize:"9px",textAlign:"center",width:"70px",background:"#f6f6f6"     }} /></td>
+                                            <td style={{textAlign:"left"}}><input type="text" placeholder="Subtotal" style={{ marginLeft:"10px",border: "0px",fontSize:"9px",textAlign:"center",width:"70px",background:"#f6f6f6"     }} /></td>
                                             <td ><input type="text" value={this.state.count} readOnly style={{ border: "0px",fontSize:"9px",width:"84px" , textAlign:"center" }} /></td>
                                         </tbody>
                                         <tr>
-                                            <td style={{background : "#dedede",fontSize:"9px",textAlign:"left"}}><input type="text" placeholder="Sales Tax(" style={{ border: "0px",fontSize:"9px",textAlign:"right",background : "#dedede",width:"55px" }} />  <input type="text"  placeholder="20" onChange={this.handletax}  style={{ border: "0px" ,width:"20px",background : "#dedede",fontSize:"9px",textAlign:"center"  }} /><input type="text" placeholder="%)" style={{ border: "0px",fontSize:"12px",textAlign:"left",background : "#dedede",width:"20px" }} /></td>
+                                            <td style={{background : "#dedede",fontSize:"9px",textAlign:"left"}}><input type="text" placeholder="Sales Tax(" style={{ marginLeft:"11px",border: "0px",fontSize:"9px",textAlign:"right",background : "#dedede",width:"55px" }} />  <input type="text"  placeholder="20" onChange={this.handletax}  style={{ border: "0px" ,width:"20px",background : "#dedede",fontSize:"9px",textAlign:"center"  }} /><input type="text" placeholder="%)" style={{ border: "0px",fontSize:"12px",textAlign:"left",background : "#dedede",width:"20px" }} /></td>
                                             <td style={{background : "#dedede"}}><input type="text" value={this.state.tax}  readOnly style={{ border: "0px" ,background : "#dedede",fontSize:"9px",width:"84px" , textAlign:"center"}} /></td>
                                         </tr>
                                         <tr>
-                                            <td style={{background: "#c5c5c5",textAlign:"left"}}><input type="text" placeholder="total" style={{ border: "1px",background: "#c5c5c5",fontSize:"9px" , textAlign:"center",width:"70px" }} /></td>
+                                            <td style={{background: "#c5c5c5",textAlign:"left"}}><input type="text" placeholder="total" style={{ border: "1px",background: "#c5c5c5",fontSize:"9px" , textAlign:"center",width:"70px",marginLeft:"1px" }} /></td>
                                             <td style={{background: "#c5c5c5"}}><input type="text" value={this.state.maintotal} readOnly style={{ border: "0px",fontSize:"9px",background: "#c5c5c5",width:"84px"   , textAlign:"center" }} /></td>
                                         </tr>
                                     </table>
